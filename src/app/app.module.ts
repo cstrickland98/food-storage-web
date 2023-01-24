@@ -9,9 +9,18 @@ import { appReducer } from './store/app.reducer';
 import { AppEffects } from './store/app.effects';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppFooterComponent } from './components/app-footer/app-footer.component';
+import { AppMainComponent } from './components/app-main/app-main.component';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 
 @NgModule({
-  declarations: [AppComponent, AppHeaderComponent],
+  declarations: [
+    AppComponent,
+    AppHeaderComponent,
+    AppFooterComponent,
+    AppMainComponent,
+    RecipeCardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
