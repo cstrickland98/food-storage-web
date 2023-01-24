@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+
+.header {
+    background-color: $brand-primary;
+    height: 4rem;
+    flex-shrink: 0;
+}
+
+.title {
+    color: $brand-tertiary;
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
