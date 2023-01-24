@@ -1,0 +1,12 @@
+.main {
+    div {
+        margin: 1rem;
+        padding: 3rem;
+        border: 1px solid black;
+    }
+}
+
+.card-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
