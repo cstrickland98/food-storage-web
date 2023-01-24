@@ -1,0 +1,6 @@
+@import '../../../styles.scss';
+
+.inputCheck:has(input[type=checkbox]:checked) {
+    border: 2px solid blue !important;
+    box-shadow: 2px 2px;
+}
