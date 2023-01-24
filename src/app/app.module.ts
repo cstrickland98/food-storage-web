@@ -4,22 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
+import { appReducer } from './store/app.reducer';
+import { AppEffects } from './store/app.effects';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
-    EffectsModule.forRoot([])
+    StoreModule.forRoot({ app: appReducer }),
+    EffectsModule.forRoot([AppEffects]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
