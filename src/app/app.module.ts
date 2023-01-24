@@ -8,12 +8,14 @@ import { EffectsModule } from '@ngrx/effects';
 import { appReducer } from './store/app.reducer';
 import { AppEffects } from './store/app.effects';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, AppHeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
     StoreModule.forRoot({ app: appReducer }),
     EffectsModule.forRoot([AppEffects]),
   ],
